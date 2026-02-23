@@ -16,6 +16,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { withBase } from 'vitepress'
 
 interface Icon {
   src: string
@@ -23,8 +24,8 @@ interface Icon {
 }
 
 const icons = ref<Icon[]>([
-  { src: '/icon.png', alt: 'RPF Icon' },
-  { src: '/icon2.png', alt: 'RPT Icon' }
+  { src: withBase('/icon.png'), alt: 'RPF Icon' },
+  { src: withBase('/icon2.png'), alt: 'RPT Icon' }
 ])
 
 const getIconStyle = (index: number) => {
