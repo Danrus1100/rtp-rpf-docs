@@ -20,6 +20,10 @@ hero:
       link: /examples/
 ---
 
+::: danger DOCS UNDER DEVELOPMENT
+Docs is not full or wrong right now. I apologize for the inconvenience
+:::
+
 <FullWidthFeatures :features="[
   {
     title: 'Resource Packs Fusion (RPF)',

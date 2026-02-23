@@ -20,6 +20,10 @@ hero:
       link: /ru/examples/
 ---
 
+::: danger ДОКУМЕТАЦИЯ В РАЗРАБОТКЕ
+Документация не полна и содержит ошибки. Приношу извинения за неудобства
+:::
+
 <FullWidthFeatures :features="[
   {
     title: 'Resource Packs Fusion (RPF)',
