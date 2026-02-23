@@ -11,13 +11,13 @@ hero:
   actions:
     - theme: brand
       text: Начать с RPF
-      link: /ru/rpf/getting-started
+      link: "/ru/rpf/getting-started"
     - theme: alt
       text: Начать с RPT
-      link: /ru/rpt/getting-started
+      link: "/ru/rpt/getting-started"
     - theme: alt
       text: Посмотреть примеры
-      link: /ru/examples/
+      link: "/ru/examples"
 ---
 
 ::: danger ДОКУМЕТАЦИЯ В РАЗРАБОТКЕ
@@ -40,42 +40,9 @@ hero:
   }
 ]" />
 
-## Зачем нужны RPF & RPT?
+<WhySimpleRu />
 
-Система ресурспаков Minecraft загружает только модель из пака с наивысшим приоритетом для каждого предмета. Это затрудняет совместное использование нескольких ресурспаков, модифицирующих разные предметы.
-
-**RPF (Resource Packs Fusion)** решает эту проблему, внедряя систему делегирования - паки могут выборочно переопределять модели и делегировать остальные пакам с более низким приоритетом.
-
-**RPT (Resource Packs Tools)** добавляет мощные функции, такие как шаблоны, переменные и условные модели, упрощая создание динамических ресурспаков без необходимости использования custom model data или отдельных модов.
-
-## Быстрый пример
-
-### RPF делегирование
-```json
-{
-  "type": "rpf:select",
-  "property": "minecraft:custom_data",
-  "cases": [
-    {
-      "when": { "special_sword": true },
-      "model": { "type": "minecraft:model", "model": "item/special_sword" }
-    }
-  ],
-  "delegate": true
-}
-```
-Эта модель будет показывать `special_sword` для предметов с NBT тегом `special_sword` и делегировать следующему паку для всех остальных предметов.
-
-### RPT шаблоны
-```json
-{
-  "model": {
-    "type": "rpt:template",
-    "template": "mypack:weapon_template"
-  }
-}
-```
-Повторно используйте сложные конфигурации моделей для нескольких предметов с системой шаблонов.
+<ExamplesSectionFlatRu />
 
 ## Начало работы
 

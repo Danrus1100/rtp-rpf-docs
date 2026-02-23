@@ -11,17 +11,17 @@ hero:
   actions:
     - theme: brand
       text: Get Started with RPF
-      link: /rpf/getting-started
+      link: "/rpf/getting-started"
     - theme: alt
       text: Get Started with RPT
-      link: /rpt/getting-started
+      link: "/rpt/getting-started"
     - theme: alt
       text: View Examples
-      link: /examples/
+      link: "/examples"
 ---
 
-::: danger DOCS UNDER DEVELOPMENT
-Docs is not full or wrong right now. I apologize for the inconvenience
+::: danger DOUCMENTATION UNDER DEVELOPMENT
+Documentation is not full and contains some errors.
 :::
 
 <FullWidthFeatures :features="[
@@ -40,54 +40,9 @@ Docs is not full or wrong right now. I apologize for the inconvenience
   }
 ]" />
 
-## Why RPF & RPT?
+<WhySimple />
 
-Minecraft's resource pack system loads only the top-priority pack's model for each item. This makes it difficult to combine multiple resource packs that modify different items.
-
-**RPF (Resource Packs Fusion)** solves this by introducing a delegation system - packs can selectively override models and delegate the rest to lower-priority packs.
-
-**RPT (Resource Packs Tools)** adds powerful features like templates, variables, and conditional models, making it easier to create dynamic resource packs without requiring custom model data or separate mods.
-
-## Quick Example
-
-### RPF Delegation
-```json
-{
-  "type": "select",
-  "property": "minecraft:custom_data",
-  "cases": [
-    {
-      "when": { "special_sword": true },
-      "model": { "type": "minecraft:model", "model": "item/special_sword" }
-    }
-  ],
-  "delegate": false
-}
-```
-This model will show `special_sword` for items with `special_sword` NBT tag, and delegate to the next pack for all other items.
-
-### RPT Templates
-```json
-{
-  "model": {
-    "type": "rpt:template",
-    "template": "mypack:weapon_template"
-  }
-}
-```
-
-in `mypack/rpt/templates/weapon_template.json`:
-
-```json
-{
-  "model": {
-    "type": "model",
-    "model": "minecraft:stone"
-  }
-}
-```
-
-Reuse complex model configurations across multiple items with the template system.
+<ExamplesSectionFlat />
 
 ## Getting Started
 
