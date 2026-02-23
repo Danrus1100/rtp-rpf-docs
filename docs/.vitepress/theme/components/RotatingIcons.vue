@@ -1,32 +1,63 @@
 <template>
   <div class="rotating-icons-container">
     <div class="icons-wrapper">
-      <div 
+      <a 
         v-for="(icon, index) in icons" 
         :key="index"
+        :href="getIconLink(index)"
         class="icon-item"
         :class="`icon-${index + 1}`"
         :style="getIconStyle(index)"
+        :title="icon.title"
       >
         <img :src="icon.src" :alt="icon.alt" />
-      </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { withBase } from 'vitepress'
+import { ref, computed } from 'vue'
+import { withBase, useData } from 'vitepress'
 
 interface Icon {
   src: string
   alt: string
+  title: string
+  link: {
+    en: string
+    ru: string
+  }
 }
 
+const { lang } = useData()
+
 const icons = ref<Icon[]>([
-  { src: withBase('/icon.png'), alt: 'RPF Icon' },
-  { src: withBase('/icon2.png'), alt: 'RPT Icon' }
+  { 
+    src: withBase('/icon.png'), 
+    alt: 'RPF Icon',
+    title: 'Go to RPF Getting Started',
+    link: {
+      en: '/rpf/getting-started',
+      ru: '/ru/rpf/getting-started'
+    }
+  },
+  { 
+    src: withBase('/icon2.png'), 
+    alt: 'RPT Icon',
+    title: 'Go to RPT Getting Started',
+    link: {
+      en: '/rpt/getting-started',
+      ru: '/ru/rpt/getting-started'
+    }
+  }
 ])
+
+const getIconLink = (index: number) => {
+  const icon = icons.value[index]
+  const currentLang = lang.value === 'ru' ? 'ru' : 'en'
+  return withBase(icon.link[currentLang])
+}
 
 const getIconStyle = (index: number) => {
   return {
@@ -64,6 +95,13 @@ const getIconStyle = (index: number) => {
   animation: float-icon 6s ease-in-out infinite;
   animation-delay: var(--rotation-delay, 0s);
   will-change: transform;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.icon-item:hover {
+  transform: scale(1.1);
 }
 
 .icon-item img {
@@ -73,6 +111,7 @@ const getIconStyle = (index: number) => {
   filter: drop-shadow(0 0 25px rgba(73, 201, 99, 0.5));
   transition: filter 0.3s ease;
   animation: counter-rotate 20s linear infinite;
+  pointer-events: none;
 }
 
 .icon-item:hover img {
@@ -129,75 +168,6 @@ const getIconStyle = (index: number) => {
   left: 0;
   z-index: 1;
   animation-delay: 3s;
-}
-
-.icon-item.icon-2 img {
-  filter: drop-shadow(0 0 25px rgba(62, 168, 219, 0.5));
-}
-
-.icon-item.icon-2:hover img {
-  filter: drop-shadow(0 0 40px rgba(62, 168, 219, 0.9));
-}
-
-.icon-item {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: rotate-icon 10s ease-in-out infinite;
-  animation-delay: var(--rotation-delay, 0s);
-  will-change: transform;
-}
-
-.icon-item img {
-  width: 160px;
-  height: 160px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 25px rgba(73, 201, 99, 0.5));
-  transition: filter 0.3s ease;
-}
-
-.icon-item:hover img {
-  filter: drop-shadow(0 0 40px rgba(73, 201, 99, 0.9));
-}
-
-@keyframes rotate-icon {
-  0%, 100% {
-    transform: rotate(0deg) translateY(0px) scale(1);
-  }
-  15% {
-    transform: rotate(3deg) translateY(-5px) scale(1.03);
-  }
-  30% {
-    transform: rotate(0deg) translateY(-8px) scale(1.05);
-  }
-  45% {
-    transform: rotate(-3deg) translateY(-5px) scale(1.03);
-  }
-  60% {
-    transform: rotate(0deg) translateY(0px) scale(1);
-  }
-  75% {
-    transform: rotate(2deg) translateY(3px) scale(0.98);
-  }
-}
-
-/* Первая иконка - справа внизу (RPF - зеленое свечение) */
-.icon-item.icon-1 {
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  transform-origin: center center;
-}
-
-/* Вторая иконка - слева вверху (RPT - синее свечение) */
-.icon-item.icon-2 {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  animation-delay: 0.8s;
 }
 
 .icon-item.icon-2 img {
