@@ -32,7 +32,8 @@ hero:
     title: 'Resource Packs Tweaks (RPT)',
     details: 'Advanced templating system, variable support, and regex-based conditional models. Create dynamic item models that respond to item data without custom model data.',
     link: 'rpt/getting-started',
-    linkText: 'Learn more about RPT'
+    linkText: 'Learn more about RPT',
+    image: '/rpt-demo.gif'
   }
 ]" />
 
