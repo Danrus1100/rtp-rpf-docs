@@ -62,6 +62,7 @@ export default defineConfig({
                 { text: 'Templates System', link: '/rpt/templates' },
                 { text: 'Working with Variables', link: '/rpt/work-with-variables' },
                 { text: 'Regular Expressions', link: '/rpt/regex' },
+                { text: 'Experimental Features', link: '/rpt/experimental' },
                 { text: 'Java API', link: '/rpt/java-api' }
               ]
             }
@@ -143,6 +144,7 @@ export default defineConfig({
                 { text: 'Работа с переменными', link: '/ru/rpt/work-with-variables' },
                 // { text: 'Система шаблонов', link: '/ru/rpt/templates' },
                 // { text: 'Переменные', link: '/ru/rpt/variables' },
+                { text: 'Экспериментальные функции', link: '/ru/rpt/experimental' },
                 { text: 'Регулярные выражения', link: '/ru/rpt/regex' },
                 // { text: 'Условные свойства', link: '/ru/rpt/conditional' }
               ]
