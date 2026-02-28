@@ -36,31 +36,3 @@ RPT добавляет систему переменных и инструмен
   }
 }
 ```
-
-
-## Шаблоны
-
-Вы можете создавать *json* файлы шалбонов в `asstest/{namespace}/rpt/templates/` с любыми названиям и в дальнешем использовать их. В целом, их структура похожа на предметы из папки `items`, но за единственным исключением, что в них нельзя указать `hand_animation_on_swap` и `oversized_in_gui`. Подробнее о том как они работают вы можете узнать [здесь](templates.md).
-
----
-
-В папке `minecraft/items`:
-```json
-{
-  "model": {
-    "type": "rpt:template",
-    "template": "namespace:my_template"
-  }
-}
-```
-В папке `namespace/rpt/templates`:
-```json
-{
-  "model": {
-    "type": "model",
-    "model": "item/diamond"
-  },
-  "rpt": {
-    ...
-  }
-}

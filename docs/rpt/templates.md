@@ -1,17 +1,21 @@
 # Template System
 
-As mentioned in the [Pack Developers Guide](pack-developers.md), templates are similar to item models, and templates also have an `rpt` field!
+You can create template *json* files in `assets/{namespace}/rpt/templates/` with any names and use them later. Their structure is similar to items from the `items` folder, with the only exception that you cannot specify `hand_animation_on_swap` and `oversized_in_gui` in them.
+
+---
+
+In the `minecraft/items` folder:
+```json
+{
+  "model": {
+    "type": "rpt:template",
+    "template": "namespace:my_template"
+  }
+}
+```
+In the `namespace/rpt/templates` folder:
 
 ```json
-// in items/
-{
-    "model": {
-        "type": "rpt:template",
-        "template": "variable_merge_test"
-    }
-}
-
-// in rpt/templates
 {
     "model": {
         "type": "rpt:variable",
@@ -27,4 +31,8 @@ As mentioned in the [Pack Developers Guide](pack-developers.md), templates are s
 }
 ```
 
-Template files themselves can be named anything and can even be nested within each other! So you won't have to create [11 thousand(!)](https://modrinth.com/resourcepack/more-clocks) lines of confusing objects anymore!
+Template files themselves can be named anything and can even be nested within each other! So you won't have to write [11 thousand(!)](https://modrinth.com/resourcepack/more-clocks) lines of tangled objects anymore!
+
+::: warning Note
+Templates can override values from the item's `rpt` field, so use distinct variable and flag names to avoid conflicts.
+:::

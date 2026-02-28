@@ -59,10 +59,14 @@ export default defineConfig({
               items: [
                 { text: 'Getting Started', link: '/rpt/getting-started' },
                 { text: 'Pack Developers Guide', link: '/rpt/pack-developers' },
-                { text: 'Templates System', link: '/rpt/templates' },
-                { text: 'Working with Variables', link: '/rpt/work-with-variables' },
-                { text: 'Regular Expressions', link: '/rpt/regex' },
-                { text: 'Experimental Features', link: '/rpt/experimental' },
+                { text: 'Model Types', items: [
+                  { text: 'Template System', link: '/rpt/templates' },
+                  { text: 'Working with Variables', link: '/rpt/work-with-variables' },
+                  { text: 'Math Expressions', link: '/rpt/expressions' },
+                  { text: 'Regular Expressions', link: '/rpt/regex' },
+                  { text: 'Arm Rotation', link: '/rpt/arm-transform' },
+                ]},
+                { text: 'Properties', link: '/rpt/properties' },
                 { text: 'Java API', link: '/rpt/java-api' }
               ]
             }
@@ -111,8 +115,6 @@ export default defineConfig({
             items: [
               { text: 'Начало работы', link: '/ru/rpt/getting-started' },
               { text: 'Для создателей', link: '/ru/rpt/pack-developers' },
-              // { text: 'Шаблоны', link: '/ru/rpt/templates' },
-              // { text: 'Переменные', link: '/ru/rpt/variables' }
             ]
           },
           // { text: 'Примеры', link: '/ru/examples/' }
@@ -140,13 +142,14 @@ export default defineConfig({
               items: [
                 { text: 'Начало работы', link: '/ru/rpt/getting-started' },
                 { text: 'Руководство для создателей наборов', link: '/ru/rpt/pack-developers' },
-                { text: 'Система шаблонов', link: '/ru/rpt/templates' },
-                { text: 'Работа с переменными', link: '/ru/rpt/work-with-variables' },
-                // { text: 'Система шаблонов', link: '/ru/rpt/templates' },
-                // { text: 'Переменные', link: '/ru/rpt/variables' },
-                { text: 'Экспериментальные функции', link: '/ru/rpt/experimental' },
-                { text: 'Регулярные выражения', link: '/ru/rpt/regex' },
-                // { text: 'Условные свойства', link: '/ru/rpt/conditional' }
+                { text: 'Типы моделей', items: [
+                  { text: 'Система шаблонов', link: '/ru/rpt/templates' },
+                  { text: 'Работа с переменными', link: '/ru/rpt/work-with-variables' },
+                  { text: 'Математические выражения', link: '/ru/rpt/expressions' },
+                  { text: 'Регулярные выражения', link: '/ru/rpt/regex' },
+                  { text: 'Вращение рук', link: '/ru/rpt/arm-transform' },
+                ]},
+                { text: 'Свойства', link: '/ru/rpt/properties' },
               ]
             }
           ]
