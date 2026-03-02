@@ -6,7 +6,7 @@
 
 ## Установка
  1) Установите [RPF](/ru/rpf/getting-started.md) как мод.
- 2) Установите [RPT](https://modrinth.com/mod/rp-twks) как мод.
+ 2) Установите [RPT](https://modrinth.com/mod/rpt) как мод.
  3) Готово!
 
 ## Как сообщить об ошибке
