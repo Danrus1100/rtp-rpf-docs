@@ -19,7 +19,7 @@
         <div class="mod-link">Click to view on Modrinth →</div>
       </a>
       
-      <a href="https://modrinth.com/project/rp-twks" target="_blank" rel="noopener noreferrer" class="mod-card rpt">
+      <a href="https://modrinth.com/mod/rpt" target="_blank" rel="noopener noreferrer" class="mod-card rpt">
         <div class="mod-header">
           <img :src="withBase('/icon2.png')" alt="RPT" />
           <h3>RPT: Resource Packs Tweaks</h3>
