@@ -6,7 +6,7 @@
 
 ## Installation
  1) Install [RPF](/rpf/getting-started.md) as a mod.
- 2) Install [RPT](https://modrinth.com/mod/rp-twks) as a mod.
+ 2) Install [RPT](https://modrinth.com/mod/rpt) as a mod.
  3) Done!
 
 ## How to Report a Bug
