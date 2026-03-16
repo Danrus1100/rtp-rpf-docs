@@ -6,7 +6,7 @@ VitePress documentation site for RPF (Resource Packs Fusion) and RPT (Resource P
 
 ```bash
 npm install
-npm run docs:dev
+npm run docs:dev -- --host 0.0.0.0
 ```
 
 ## Build
