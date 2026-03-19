@@ -38,7 +38,7 @@ const { lang } = useData()
 
 const icons = ref<Icon[]>([
   { 
-    src: withBase('/icon.png'), 
+    src: withBase('/512_icon.png'), 
     alt: 'RPF Icon',
     title: 'Go to RPF Modrinth',
     link: {
@@ -47,7 +47,7 @@ const icons = ref<Icon[]>([
     }
   },
   { 
-    src: withBase('/icon2.png'), 
+    src: withBase('/512_icon2.png'), 
     alt: 'RPT Icon',
     title: 'Go to RPT Modrinth',
     link: {
