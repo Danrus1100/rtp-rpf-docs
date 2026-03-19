@@ -12,18 +12,18 @@
     }
 
     /* Центры трансформации для каждой иконки */
-    /* Иконка 1 (RPF) находится в правом нижнем углу, ее центр: 230, 230 */
+    /* Иконка 1 (RPF) находится в правом нижнем углу, ее центр: 210, 210 */
     .icon-1 .icon-inner, 
     .icon-1 .icon-scale, 
     .icon-1 .img-wobble {
-      transform-origin: 230px 230px;
+      transform-origin: 210px 210px;
     }
     
-    /* Иконка 2 (RPT) находится в левом верхнем углу, ее центр: 90, 90 */
+    /* Иконка 2 (RPT) находится в левом верхнем углу, ее центр: 110, 110 */
     .icon-2 .icon-inner, 
     .icon-2 .icon-scale, 
     .icon-2 .img-wobble {
-      transform-origin: 90px 90px;
+      transform-origin: 110px 110px;
     }
 
     /* Контр-вращение: чтобы картинки не переворачивались вверх ногами */
@@ -86,7 +86,7 @@
     <a href="https://modrinth.com/project/kW70KuE2" target="_blank" class="icon-item icon-2" title="Go to RPT Modrinth">
       <g class="icon-inner">
         <g class="icon-scale">
-          <image href="https://github.com/Danrus1100/rtp-rpf-docs/blob/main/docs/public/512_icon2.png?raw=true" x="10" y="10" width="160" height="160" class="img-wobble" />
+          <image href="https://danrus1100.github.io/rtp-rpf-docs/512_icon2.png" x="50" y="50" width="120" height="120" class="img-wobble" />
         </g>
       </g>
     </a>
@@ -94,7 +94,7 @@
     <a href="https://modrinth.com/project/zmAOqYcS" target="_blank" class="icon-item icon-1" title="Go to RPF Modrinth">
       <g class="icon-inner">
         <g class="icon-scale">
-          <image href="https://github.com/Danrus1100/rtp-rpf-docs/blob/main/docs/public/512_icon.png?raw=true" x="150" y="150" width="160" height="160" class="img-wobble" />
+          <image href="https://danrus1100.github.io/rtp-rpf-docs/512_icon.png" x="150" y="150" width="120" height="120" class="img-wobble" />
         </g>
       </g>
     </a>
