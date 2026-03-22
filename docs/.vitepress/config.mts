@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "RPF & RPT Docs",
-  description: "Documentation for Resource Packs Fusion and Resource Packs Tools - Minecraft mods for advanced resource pack delegation and item model management",
+  description: "Documentation for Resource Packs Fusion and Resource Packs Tweaks - Minecraft mods for advanced resource pack delegation and item model management",
   
   // Base URL for GitHub Pages (replace 'rtp-rpf-docs' with your repo name if different)
   base: '/rtp-rpf-docs/',
@@ -29,14 +29,17 @@ export default defineConfig({
             text: 'RPF', 
             items: [
               { text: 'Getting Started', link: '/rpf/getting-started' },
-              { text: 'Pack Developers', link: '/rpf/pack-developers' }
+              { text: 'How It Works', link: '/rpf/how-it-works' },
+              { text: 'Delegation System', link: '/rpf/delegation' },
+              { text: 'Pack Developers Guide', link: '/rpf/pack-developers' }
             ]
           },
           { 
             text: 'RPT', 
             items: [
               { text: 'Getting Started', link: '/rpt/getting-started' },
-              { text: 'Pack Developers', link: '/rpt/pack-developers' }
+              { text: 'Pack Developers Guide', link: '/rpt/pack-developers' },
+              { text: 'Java API', link: '/rpt/java-api' }
             ]
           },
         ],
@@ -55,7 +58,7 @@ export default defineConfig({
           ],
           '/rpt/': [
             {
-              text: 'RPT - Resource Packs Tools',
+              text: 'RPT - Resource Packs Tweaks',
               items: [
                 { text: 'Getting Started', link: '/rpt/getting-started' },
                 { text: 'Pack Developers Guide', link: '/rpt/pack-developers' },
@@ -65,6 +68,8 @@ export default defineConfig({
                   { text: 'Math Expressions', link: '/rpt/expressions' },
                   { text: 'Regular Expressions', link: '/rpt/regex' },
                   { text: 'Arm Rotation', link: '/rpt/arm-transform' },
+                  { text: 'Selectors', link: '/rpt/selectors' },
+                  { text: 'Patch System', link: '/rpt/patches' }
                 ]},
                 { text: 'Properties', link: '/rpt/properties' },
                 { text: 'Java API', link: '/rpt/java-api' }
@@ -138,7 +143,7 @@ export default defineConfig({
           ],
           '/ru/rpt/': [
             {
-              text: 'RPT - Resource Packs Tools',
+              text: 'RPT - Resource Packs Tweaks',
               items: [
                 { text: 'Начало работы', link: '/ru/rpt/getting-started' },
                 { text: 'Руководство для создателей наборов', link: '/ru/rpt/pack-developers' },
@@ -148,15 +153,18 @@ export default defineConfig({
                   { text: 'Математические выражения', link: '/ru/rpt/expressions' },
                   { text: 'Регулярные выражения', link: '/ru/rpt/regex' },
                   { text: 'Вращение рук', link: '/ru/rpt/arm-transform' },
+                  { text: 'Селекторы', link: '/ru/rpt/selectors' },
+                  { text: 'Система патчей', link: '/ru/rpt/patches' }
                 ]},
                 { text: 'Свойства', link: '/ru/rpt/properties' },
+                { text: 'Java API', link: '/ru/rpt/java-api' }
               ]
             }
           ]
         },
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/danrus' }
+          { icon: 'github', link: 'https://github.com/Danrus1100/rtp-rpf-docs' }
         ],
 
         footer: {
