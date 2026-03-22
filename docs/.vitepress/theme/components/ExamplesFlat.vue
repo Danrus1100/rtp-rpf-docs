@@ -1,8 +1,8 @@
 <template>
   <div class="examples-tabs-flat">
     <div class="section-header">
-      <h2>Quick Examples</h2>
-      <p class="section-description">Explore practical examples of RPF and RPT features</p>
+      <h2>{{ title }}</h2>
+      <p class="section-description">{{ description }}</p>
     </div>
 
     <div class="main-tabs">
@@ -49,6 +49,14 @@ import { ref } from 'vue'
 import { withBase } from 'vitepress'
 
 const props = defineProps({
+  title: {
+    type: String,
+    default: 'Quick Examples'
+  },
+  description: {
+    type: String,
+    default: 'Explore practical examples of RPF and RPT features'
+  },
   examples: {
     type: Array,
     required: true

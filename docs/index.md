@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: Get Started with RPT
       link: "/rpt/getting-started"
-    - theme: alt
-      text: View Examples
-      link: "/examples"
 ---
 
 <FullWidthFeatures :features="[
@@ -39,7 +36,6 @@ hero:
 
 <WhySimple />
 
-<ExamplesSectionFlat />
 
 ## Getting Started
 

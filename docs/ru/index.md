@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: Начать с RPT
       link: "/ru/rpt/getting-started"
-    - theme: alt
-      text: Посмотреть примеры
-      link: "/ru/examples"
 ---
 
 <FullWidthFeatures :features="[
@@ -38,8 +35,6 @@ hero:
 ]" />
 
 <WhySimpleRu />
-
-<ExamplesSectionFlatRu />
 
 ## Начало работы
 

@@ -68,6 +68,7 @@ export default defineConfig({
                   { text: 'Math Expressions', link: '/rpt/expressions' },
                   { text: 'Regular Expressions', link: '/rpt/regex' },
                   { text: 'Arm Rotation', link: '/rpt/arm-transform' },
+                  { text: 'Anchor', link: '/rpt/anchor' },
                   { text: 'Selectors', link: '/rpt/selectors' },
                   { text: 'Patch System', link: '/rpt/patches' }
                 ]},
@@ -153,6 +154,7 @@ export default defineConfig({
                   { text: 'Математические выражения', link: '/ru/rpt/expressions' },
                   { text: 'Регулярные выражения', link: '/ru/rpt/regex' },
                   { text: 'Вращение рук', link: '/ru/rpt/arm-transform' },
+                  { text: 'Якорные точки', link: '/ru/rpt/anchor' },
                   { text: 'Селекторы', link: '/ru/rpt/selectors' },
                   { text: 'Система патчей', link: '/ru/rpt/patches' }
                 ]},

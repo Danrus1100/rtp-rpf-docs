@@ -1,5 +1,9 @@
 <template>
-  <ExamplesFlat :examples="examples" />
+  <ExamplesFlat 
+    title="Примеры" 
+    description="Изучите примеры возможностей RPF и RPT"
+    :examples="examples" 
+  />
 </template>
 
 <script setup>

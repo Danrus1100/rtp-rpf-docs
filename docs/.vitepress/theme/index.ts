@@ -11,6 +11,7 @@ import ExamplesFlat from './components/ExamplesFlat.vue'
 import ExamplesSectionFlat from './components/ExamplesSectionFlat.vue'
 import ExamplesSectionFlatRu from './components/ExamplesSectionFlatRu.vue'
 import CodeMediaBlock from './components/CodeMediaBlock.vue'
+import ProjectsShowcase from './components/ProjectsShowcase.vue'
 
 export default {
   extends: DefaultTheme,
@@ -28,5 +29,6 @@ export default {
     app.component('ExamplesSectionFlat', ExamplesSectionFlat)
     app.component('ExamplesSectionFlatRu', ExamplesSectionFlatRu)
     app.component('CodeMediaBlock', CodeMediaBlock)
+    app.component('ProjectsShowcase', ProjectsShowcase)
   }
 } satisfies Theme
