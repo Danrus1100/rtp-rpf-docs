@@ -198,6 +198,8 @@ onUnmounted(() => {
 .section-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 0.2em;
   background: linear-gradient(120deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-2) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

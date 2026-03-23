@@ -49,6 +49,8 @@ import { withBase } from 'vitepress'
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
+  padding-bottom: 0.2em;
   background: linear-gradient(135deg, var(--rpf-green-2), var(--rpf-blue-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

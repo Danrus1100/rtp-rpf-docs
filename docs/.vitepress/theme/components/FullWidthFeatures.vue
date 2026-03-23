@@ -132,10 +132,12 @@ const getIconPath = (index: number) => {
   font-weight: 700;
   color: var(--vp-c-text-1);
   margin: 0;
+  line-height: 1.2;
   background: linear-gradient(135deg, var(--rpf-green-2), var(--rpf-blue-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  padding-bottom: 0.2em;
 }
 
 .feature-details {
