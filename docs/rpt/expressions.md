@@ -109,8 +109,9 @@ Available only if the item is held by a player. Otherwise, standard values are r
 | `sleeping` | Whether the player is sleeping (1 - yes, 0 - no). | `0` |
 | `attackProgress` | Animation progress of a hit from 0 to 1. | `0` |
 | `usageProgress` | Animation progress of using an item from 0 to 1. | `0` |
+| `isSlim` | Is player arms slim: 1 - yes, 0 - no | `0` |
 
-### 4. Environment and Lighting
+### 4. Environment and Lightin
 | Variable | Description | Default Value |
 | :--- | :--- | :--- |
 | `lightSky` | Sky lighting level at current position (0 - 15). | `0` |
