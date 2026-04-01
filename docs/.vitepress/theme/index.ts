@@ -12,12 +12,15 @@ import ExamplesSectionFlat from './components/ExamplesSectionFlat.vue'
 import ExamplesSectionFlatRu from './components/ExamplesSectionFlatRu.vue'
 import CodeMediaBlock from './components/CodeMediaBlock.vue'
 import ProjectsShowcase from './components/ProjectsShowcase.vue'
+import SickSite from './components/SickSite.vue'
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      'home-hero-image': () => h(RotatingIcons)
+    return h(SickSite, null, {
+      default: () => h(DefaultTheme.Layout, null, {
+        'home-hero-image': () => h(RotatingIcons)
+      })
     })
   },
   enhanceApp({ app, router, siteData }) {
@@ -30,5 +33,6 @@ export default {
     app.component('ExamplesSectionFlatRu', ExamplesSectionFlatRu)
     app.component('CodeMediaBlock', CodeMediaBlock)
     app.component('ProjectsShowcase', ProjectsShowcase)
+    app.component('SickSite', SickSite)
   }
 } satisfies Theme
