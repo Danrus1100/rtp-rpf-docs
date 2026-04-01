@@ -14,7 +14,11 @@
         "base": "item/...",
         "model": {
             "type": "rpt:bbmodel",
-            "model": "model_name"
+            "model": "model_name",
+            "attachment": {
+                "group": "group_name",
+                "model" : {...}
+            }
         }
     }
 }
