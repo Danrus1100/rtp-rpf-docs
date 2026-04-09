@@ -91,7 +91,8 @@ export default defineConfig({
         },
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/Danrus1100/rtp-rpf-docs' }
+          { icon: 'github', link: 'https://github.com/Danrus1100/rtp-rpf-docs' },
+          { icon: 'crowdin', link: 'https://crowdin.com/project/rtp-rpf-docs' }
         ],
 
         footer: {
@@ -166,7 +167,8 @@ export default defineConfig({
         },
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/Danrus1100/rtp-rpf-docs' }
+          { icon: 'github', link: 'https://github.com/Danrus1100/rtp-rpf-docs' },
+          { icon: 'crowdin', link: 'https://crowdin.com/project/rtp-rpf-docs' }
         ],
 
         footer: {

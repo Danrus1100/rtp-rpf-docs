@@ -31,3 +31,5 @@ yarn-error.log*
 # Debug
 debug/
 .vite-inspect/
+docs/.vitepress/theme/components/COMPONENT_I18N_GUIDE.md
+FINAL_SUMMARY.txt
