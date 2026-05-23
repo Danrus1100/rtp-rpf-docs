@@ -200,8 +200,8 @@ export default defineConfig({
   },
 
   themeConfig: {
-    rpfVersion: '1.0',
-    rptVersion: '1.0',
+    rpfVersion: '1.4.7',
+    rptVersion: '1.3.4',
     search: {
       provider: 'local',
       options: {
