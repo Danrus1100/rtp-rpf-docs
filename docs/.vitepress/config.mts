@@ -22,8 +22,6 @@ export default defineConfig({
       lang: 'en',
       themeConfig: {
         logo: '/site_logo.png',
-        rpfVersion: '1.4.7',
-        rptVersion: '1.3.4',
         
         nav: [
           { text: 'Home', link: '/' },
@@ -108,8 +106,6 @@ export default defineConfig({
       lang: 'ru',
       themeConfig: {
         logo: '/site_logo.png',
-        rpfVersion: '1.0',
-        rptVersion: '1.0',
         
         nav: [
           { text: 'Главная', link: '/ru/' },
@@ -204,6 +200,8 @@ export default defineConfig({
   },
 
   themeConfig: {
+    rpfVersion: '1.0',
+    rptVersion: '1.0',
     search: {
       provider: 'local',
       options: {

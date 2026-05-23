@@ -2,10 +2,11 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 
-const { theme } = useData()
+const { theme, site } = useData()
 
-const rpfVersion = computed(() => theme.value?.rpfVersion ?? '')
-const rptVersion = computed(() => theme.value?.rptVersion ?? '')
+const globalTheme = computed(() => site.value?.themeConfig ?? {})
+const rpfVersion = computed(() => theme.value?.rpfVersion ?? globalTheme.value?.rpfVersion ?? '')
+const rptVersion = computed(() => theme.value?.rptVersion ?? globalTheme.value?.rptVersion ?? '')
 const hasVersions = computed(() => Boolean(rpfVersion.value || rptVersion.value))
 </script>
 
