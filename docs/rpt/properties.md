@@ -8,7 +8,12 @@
  3. `rpt:difficulty` - the current game difficulty. Can be `none` (if the item is rendered outside the world), `hardcore`, `peaceful`, `easy`, `normal`, or `hard`
 
 ## Condition Properties
- 1. `in_fluid` - whether the item holder is currently in a fluid
+ 1. `in_fluid` - whether the item holder is currently in a fluid. accepts a `fluid` parameter:
+    - `empty` - no fluid
+    - `flowing_water` - flowing water
+    - `water` - water without flow
+    - `flowing_lava` - flowing lava
+    - `lava` - lava without flow
  2. `entity_flag` - accepts a `flag` parameter, which can be:
     - `on_fire` - whether the entity is currently on fire.
     - `sneaking` - whether the entity is sneaking (crouching).

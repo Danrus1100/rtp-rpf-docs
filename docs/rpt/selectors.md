@@ -10,6 +10,7 @@ Texture swappers allow you to substitute certain textures in the game depending 
 
 At the time of writing, swappers can change 3 types of textures:
  - Player armor (`textures\entity\equipment\humanoid`)
+ - Elytra
  - Spyglass glass
  - Overlay texture (in vanilla, only Carved Pumpkin exists)
 

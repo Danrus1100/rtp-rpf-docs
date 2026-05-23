@@ -208,6 +208,44 @@
   border-bottom: 1px solid rgba(60, 60, 67, 0.12);
 }
 
+/* Navbar versions (left of search) */
+.rpf-rpt-versions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: var(--vp-c-text-2);
+}
+
+.version-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  line-height: 1.1;
+  border: 1px solid transparent;
+}
+
+.version-chip.rpf {
+  background: var(--rpf-green-soft);
+  color: var(--rpf-green-1);
+  border-color: rgba(73, 201, 99, 0.35);
+}
+
+.version-chip.rpt {
+  background: var(--rpf-blue-soft);
+  color: var(--rpf-blue-1);
+  border-color: rgba(62, 168, 219, 0.35);
+}
+
+.version-separator {
+  opacity: 0.6;
+}
+
 /* Link colors with accent colors */
 a {
   color: var(--rpf-green-2);
