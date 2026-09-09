@@ -82,7 +82,7 @@ hero:
       description: 'Оптимизированная и эстетичная ванильная сборка для приватных сервера NetherSword Для Minecraft 1.21.8+',
       tag: 'Сборка',
       icon: 'https://cdn.modrinth.com/data/RDlCZ5F9/3343f46fb661eeb7f1ec602fb5a862b16b7dbd20_96.webp',
-      banner: 'https://cdn.modrinth.com/data/RDlCZ5F9/images/2dc1a42cd3e4025cbd7ca402c095a29358baf928.jpeg',
+      banner: 'https://cdn.modrinth.com/data/RDlCZ5F9/images/de82bde063797b367b18d2cc223cd185d1e3331d.png',
       modrinth: 'https://modrinth.com/modpack/nsp'
     },
     {
